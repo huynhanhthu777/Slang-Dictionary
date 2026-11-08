@@ -10,7 +10,7 @@
 ![Tests](https://img.shields.io/badge/tests-JUnit%205-brightgreen)
 ![Course](https://img.shields.io/badge/CSC13002-Java%20Application%20Programming-8A2BE2)
 
-<img src="docs/screenshots/search-ama.png" alt="Màn hình tìm kiếm Slang Dictionary" width="860">
+<img src="docs/screenshots/search.png" alt="Màn hình tìm kiếm Slang Dictionary" width="860">
 
 </div>
 
