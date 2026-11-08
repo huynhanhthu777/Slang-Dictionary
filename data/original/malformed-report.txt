@@ -1,0 +1,59 @@
+DATA QUALITY REPORT
+===================
+Lines read      : 7662
+Entries loaded  : 7656
+Issues found    : 46
+
+By action: {IGNORED=1, AUTO_REPAIRED=30, KEPT=15}
+
+Policy: no line is skipped silently.
+  AUTO_REPAIRED = fixed by a verified rule (original text shown).
+  QUARANTINED   = NOT loaded; the raw line is kept here so nothing is lost.
+  KEPT          = loaded unchanged (for your information).
+
+line 1 [HEADER -> IGNORED] column header, not an entry  | raw: Slag`Meaning
+line 162 [WHITESPACE -> AUTO_REPAIRED] leading/trailing spaces trimmed  | raw: 8-)`Cool 
+line 163 [WHITESPACE -> AUTO_REPAIRED] leading/trailing spaces trimmed  | raw: 8-|`Nerdy 
+line 413 [MISSING_DELIMITER -> AUTO_REPAIRED] verified continuation: next meaning of the previous slang 'AMA' (line was broken) -> merged into its definition  | raw: Against Medical Advice
+line 568 [EXACT_DUPLICATE -> KEPT] same slang AND same definition appears more than once; kept (delete it in Manage if unwanted)  | raw: AWS`As We Speak
+line 908 [MISSING_DELIMITER -> AUTO_REPAIRED] verified continuation: next meaning of the previous slang 'BOMB' (line was broken) -> merged into its definition  | raw: Something really good
+line 1080 [WHITESPACE -> AUTO_REPAIRED] leading/trailing spaces trimmed  | raw: BW `Beautiful Woman| Black and White
+line 1089 [WHITESPACE -> AUTO_REPAIRED] leading/trailing spaces trimmed  | raw: BWW`Buffalo Wild Wings 
+line 1112 [MISSING_DELIMITER -> AUTO_REPAIRED] verified continuation: next meaning of the previous slang 'C4C' (line was broken) -> merged into its definition  | raw: Cam for Cam
+line 1160 [WHITESPACE -> AUTO_REPAIRED] leading/trailing spaces trimmed  | raw: CBR`Captive Bead Ring 
+line 1215 [EXACT_DUPLICATE -> KEPT] same slang AND same definition appears more than once; kept (delete it in Manage if unwanted)  | raw: CHEESE`Drug| starter heroin| Money
+line 1448 [WHITESPACE -> AUTO_REPAIRED] leading/trailing spaces trimmed  | raw: CULO`Ass 
+line 2004 [MISSING_DELIMITER -> AUTO_REPAIRED] verified continuation: next meaning of the previous slang 'ER' (line was broken) -> merged into its definition  | raw: Indicating hesitation
+line 2184 [EXACT_DUPLICATE -> KEPT] same slang AND same definition appears more than once; kept (delete it in Manage if unwanted)  | raw: FLAGGED`Banned
+line 2522 [EXACT_DUPLICATE -> KEPT] same slang AND same definition appears more than once; kept (delete it in Manage if unwanted)  | raw: GOAT`Greatest Of All Time
+line 2564 [WHITESPACE -> AUTO_REPAIRED] leading/trailing spaces trimmed  | raw: GPC`Generic Pack of Cigarettes| Get/Post/Cookie 
+line 2755 [WHITESPACE -> AUTO_REPAIRED] leading/trailing spaces trimmed  | raw: HD `High-Definition
+line 2825 [WHITESPACE -> AUTO_REPAIRED] leading/trailing spaces trimmed  | raw:  HK`Hong Kong| Hostile Kids
+line 2882 [MISSING_DELIMITER -> AUTO_REPAIRED] verified continuation: next meaning of the previous slang 'HOODIE' (line was broken) -> merged into its definition  | raw: Person wearing a hooded sweatshirt
+line 2941 [WHITESPACE -> AUTO_REPAIRED] leading/trailing spaces trimmed  | raw: HUNNED `Hundred dollars
+line 3028 [WHITESPACE -> AUTO_REPAIRED] leading/trailing spaces trimmed  | raw: ICC`Ice Crown Citadel 
+line 3470 [EXACT_DUPLICATE -> KEPT] same slang AND same definition appears more than once; kept (delete it in Manage if unwanted)  | raw: JGI`Just Google It
+line 3471 [EXACT_DUPLICATE -> KEPT] same slang AND same definition appears more than once; kept (delete it in Manage if unwanted)  | raw: JGL`Just Get Lost
+line 3921 [WHITESPACE -> AUTO_REPAIRED] leading/trailing spaces trimmed  | raw: LOOT`Money 
+line 4104 [WHITESPACE -> AUTO_REPAIRED] leading/trailing spaces trimmed  | raw: MBFAM `My Brother From Another Mother
+line 4119 [WHITESPACE -> AUTO_REPAIRED] leading/trailing spaces trimmed  | raw:  MCR`My Chemical Romance (band)
+line 4119 [EXACT_DUPLICATE -> KEPT] same slang AND same definition appears more than once; kept (delete it in Manage if unwanted)  | raw:  MCR`My Chemical Romance (band)
+line 4120 [EXACT_DUPLICATE -> KEPT] same slang AND same definition appears more than once; kept (delete it in Manage if unwanted)  | raw: MD`Doctor of Medicine| Managing Director
+line 4388 [WHITESPACE -> AUTO_REPAIRED] leading/trailing spaces trimmed  | raw: MW2 `Modern Warfare 2 (game)
+line 4442 [EXACT_DUPLICATE -> KEPT] same slang AND same definition appears more than once; kept (delete it in Manage if unwanted)  | raw: NAE`No
+line 4911 [WHITESPACE -> AUTO_REPAIRED] leading/trailing spaces trimmed  | raw: ONG `OMG
+line 5088 [EXACT_DUPLICATE -> KEPT] same slang AND same definition appears more than once; kept (delete it in Manage if unwanted)  | raw: PBUH`Peace Be Upon Him
+line 5289 [WHITESPACE -> AUTO_REPAIRED] leading/trailing spaces trimmed  | raw: POTW`Patient of the Week 
+line 5411 [EXACT_DUPLICATE -> KEPT] same slang AND same definition appears more than once; kept (delete it in Manage if unwanted)  | raw: PYP`Play Your Position
+line 5412 [EXACT_DUPLICATE -> KEPT] same slang AND same definition appears more than once; kept (delete it in Manage if unwanted)  | raw: PYT`Pretty Young Thing
+line 6056 [EXACT_DUPLICATE -> KEPT] same slang AND same definition appears more than once; kept (delete it in Manage if unwanted)  | raw: SOWIE`Sorry
+line 6194 [WHITESPACE -> AUTO_REPAIRED] leading/trailing spaces trimmed  | raw: SWAGG `Style| coolness| confidence
+line 6222 [WHITESPACE -> AUTO_REPAIRED] leading/trailing spaces trimmed  | raw: SWND `Sound
+line 6379 [EXACT_DUPLICATE -> KEPT] same slang AND same definition appears more than once; kept (delete it in Manage if unwanted)  | raw: TEOTWAWKI`The End Of The World As We Know It
+line 6425 [WHITESPACE -> AUTO_REPAIRED] leading/trailing spaces trimmed  | raw: THANQ `Thank You
+line 6443 [WHITESPACE -> AUTO_REPAIRED] leading/trailing spaces trimmed  | raw: THT `That
+line 6784 [WHITESPACE -> AUTO_REPAIRED] leading/trailing spaces trimmed  | raw: UBER `Ultimate| best| above
+line 7061 [WHITESPACE -> AUTO_REPAIRED] leading/trailing spaces trimmed  | raw: WCB `Will Call Back
+line 7337 [EXACT_DUPLICATE -> KEPT] same slang AND same definition appears more than once; kept (delete it in Manage if unwanted)  | raw: WUWU`What's Up With You?
+line 7661 [ENCODING -> AUTO_REPAIRED] garbled character 'Æ' replaced by '®' (confirmed by definition: Registered Trademark Symbol)  | raw: Æ`Registered Trademark Symbol
+line 7662 [ENCODING -> AUTO_REPAIRED] garbled character 'ô' replaced by '™' (confirmed by definition: Trademark)  | raw: ô`Trademark

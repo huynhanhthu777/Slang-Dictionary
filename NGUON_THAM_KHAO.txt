@@ -1,0 +1,23 @@
+NGUON THAM KHAO VA CONG CU DA DUNG  
+
+1. Du lieu
+   - data/original/slang.raw.txt: file slang cua de bai.
+   - slang.normalized.txt va malformed-report.txt: sinh ra tu file tren bang chinh code cua du an (SlangParser, NormalizeData).
+
+2. Thu vien / cong cu ben ngoai
+   - JDK 17+ (java.util, java.io, java.nio, Swing/AWT): thu vien chuan cua Java.
+   - JUnit 5 (Jupiter) 5.10.x: chi dung cho unit test. Maven (pom.xml) la tuy chon, build.sh/build.bat khong can Maven.
+   - Font Fredoka va Nunito (giay phep SIL Open Font License): dong goi trong src/main/resources/fonts.
+
+3. Y tuong thuat toan
+   - HashMap, ArrayList, binary search: kien thuc trong giao trinh Cau truc du lieu va giai thuat / tai lieu Java chinh thuc.
+   - CRC32 (java.util.zip) de kiem tra file snapshot; ghi "file tam -> fsync -> doi ten" la ky thuat ghi file an toan thong dung.
+
+4. Cong cu AI ho tro
+   - Code duoc viet va sua voi su ho tro cua tro ly AI (Claude, Anthropic) o nhieu luot lam viec, gom:
+     them kiem thu truong hop dac biet (EdgeCaseTest), build JAR, viet tai lieu.
+
+5. Ty le thuc te
+   - code tham khao / do AI ho tro: 35%   
+   - code tu viet: 65%
+

@@ -1,0 +1,30 @@
+SLANG DICTIONARY - DAMH#1 
+MSSV: 24127247
+Ho ten: Huỳnh Anh Thư
+Link video YouTube: https://youtu.be/Y8sBPrGkua4
+Link GitHub: https://github.com/huynhanhthu777/Slang-Dictionary
+
+TU DANH GIA
+
+ 1. Tim kiem theo slang word                     [10/10]  HashMap ~1.4 us (trung vi) / 100.000 slang; test RepositoryTest, EdgeCaseTest
+ 2. Tim kiem theo definition (chua keyword)      [10/10]  ~2.4 ms trung vi (xau nhat ~67 ms) / 100.000, deu < 1 s; PerformanceTest
+ 3. Hien thi history                             [10/10]  luu file, tim lai, xoa; tat/mo lai app; DictionaryServiceTest, HistoryPersistenceTest
+ 4. Add slang moi (trung -> Overwrite/Keep both) [10/10]  co luu + hoan tac khi loi; Overwrite/Keep both sau khi mo lai: EdgeCaseTest
+ 5. Edit slang                                   [10/10]  sua thanh slang da co, cap nhat index, sau khi mo lai: EdgeCaseTest
+ 6. Delete slang (co xac nhan)                   [10/10]  xoa dung 1 entry khi co nhieu slang trung: EdgeCaseTest
+ 7. Reset danh sach slang goc                    [10/10]  doc slang.normalized.txt; file raw/normalized khong bi ghi; sau Reset + mo lai: EdgeCaseTest
+ 8. Random slang (On this day)                   [10/10]  O(1), slang cua ngay co dinh trong ngay; tu dien rong / chi 1 entry: EdgeCaseTest
+ 9. Do vui: 1 slang, 4 dap an definition         [10/10]  SearchAndQuizTest + EdgeCaseTest (4 dap an khac nhau, dung 1; khong du du lieu -> bao loi ro rang)
+10. Do vui: 1 definition, 4 dap an slang         [10/10]  EdgeCaseTest (nhieu slang cung definition)
+
+KY THUAT
+- Cau truc du lieu: HashMap<String,ArrayList<Long>>, HashMap<Long,SlangEntry>, ArrayList + binary search (goi y prefix).
+- Luu cau truc da index (dictionary.dat: magic + version ID + CRC32), lan sau khong index lai; backup .bak; slang.working.txt cung version ID.
+- File goc slang.raw.txt giu nguyen; slang.normalized.txt chuan hoa mot lan; malformed-report.txt liet ke tung dong (khong bo qua dong nao).
+- Unit test: 140 test JUnit 5;
+- Benchmark 7 vong: docs/benchmarks/benchmark-100k.txt (Add/Edit/Delete/Reset co luu, trung vi 0.2-0.45 s).
+
+- File JAR chay duoc: dist/SlangDictionary.jar (java -jar dist/SlangDictionary.jar), thu muc dist/data di kem.
+
+PHAN TRAM THAM KHAO / CONG CU HO TRO (khai dung su that): [35%]
+Nguon tham khao / cong cu AI da dung: xem NGUON_THAM_KHAO.txt 

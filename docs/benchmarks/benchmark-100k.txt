@@ -1,0 +1,15 @@
+Benchmark 100.000 entries, 7 rounds - 2026-11-06 - sandbox: 1 CPU, JDK 21.0.12.1, nothing else running
+Add/Edit/Delete/Reset INCLUDE writing slang.working.txt + dictionary.dat (CRC) + backup with fsync, plus read-back verification.
+Round 1 includes JVM warm-up, so 'max' is usually round 1. Numbers vary by machine and disk (Windows/HDD can be slower).
+
+Benchmark: 100,000 entries, 7 runs (each in a fresh temporary folder). min / median / max
+  Cold start (first launch)              474.6 /     595.5 /    1880.5 ms
+  Warm start (saved index reused)        208.2 /     245.9 /    1205.1 ms
+  Slang lookup                             0.9 /       1.4 /       4.2 us
+  Prefix suggestions                      39.2 /      64.1 /     185.8 us
+  Definition search, average               2.1 /       2.4 /       7.6 ms
+  Definition search, worst                 2.5 /       5.5 /      66.7 ms
+  Add (incl. save)                       217.3 /     252.9 /     528.6 ms
+  Edit (incl. save)                      200.2 /     324.9 /     364.9 ms
+  Delete (incl. save)                    192.5 /     213.5 /     241.8 ms
+  Reset to original (incl. save)         382.1 /     453.9 /     826.7 ms

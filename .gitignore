@@ -1,0 +1,8 @@
+out/
+out-test/
+target/
+data/working/
+data/working-damaged-*/
+*.class
+.DS_Store
+__MACOSX/
